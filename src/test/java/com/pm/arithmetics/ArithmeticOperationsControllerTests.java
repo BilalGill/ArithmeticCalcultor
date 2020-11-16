@@ -58,7 +58,7 @@ public class ArithmeticOperationsControllerTests {
                 .content("[1]"))
                 .andDo(print())
                 .andExpect(status().isUnprocessableEntity())
-                .andExpect(status().reason("Too few operands"));
+                .andExpect(status().reason("Too short operands"));
     }
 
     @Test
