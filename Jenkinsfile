@@ -3,12 +3,12 @@ pipeline {
      stages {
           stage("Checkout") {
                steps {
-                    git 'https://github.com/example/test.git'
+                    git 'https://github.com/BilalGill/ArithmeticCalcultor.git'
                }
           }
           stage("Build") {
                steps {
-                    sh "mvn clean install -DskipTests"
+                    sh "mvn clean install -DskipTest"
                }
           }
           stage("Test") {
@@ -18,7 +18,7 @@ pipeline {
           }
           stage("Deploy") {
               steps{
-                    sh "cp target/1.0.0-SNAPSHOT.jar ~/.m2 "
+                    sh "cp target/server-1.0.0.jar ~/.m2 "
                   }
               }
           }
