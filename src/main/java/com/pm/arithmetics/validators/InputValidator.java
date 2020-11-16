@@ -1,15 +1,16 @@
-package com.pm.arithmetics.utils;
+package com.pm.arithmetics.validators;
 
-import com.pm.arithmetics.exceptions.TooShortOperandException;
+import com.pm.arithmetics.exceptions.NotEnoughOperandException;
 import com.pm.arithmetics.exceptions.InvalidOperandException;
 
 import java.util.Arrays;
 
-public class Validator {
+// This class contain validation functions
+public class InputValidator {
 
     public static void inputValidate(double[] operandList) {
         if(operandList.length < 2)
-            throw new TooShortOperandException();
+            throw new NotEnoughOperandException();
     }
 
     public static void dividentValidate(double[] operandList) {

@@ -1,7 +1,7 @@
 package com.pm.arithmetics.services;
 
 
-public interface ArithmeticOperationsService {
+public interface ArithmeticOpsService {
 
     double add(double[] operandList);
     double subtract(double[] operandList);
