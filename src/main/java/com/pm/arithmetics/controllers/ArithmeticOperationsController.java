@@ -10,8 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.text.DecimalFormat;
 
 
-//TODO unit test controller, assertException
-
 @RestController
 @RequestMapping("v1")
 public class ArithmeticOperationsController {
