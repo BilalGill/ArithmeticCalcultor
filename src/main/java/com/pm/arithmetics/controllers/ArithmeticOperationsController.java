@@ -24,6 +24,7 @@ public class ArithmeticOperationsController {
         this.arithmeticService = arithmeticService;
     }
 
+
     @PostMapping("/add")
     public String add(@RequestBody double[] inputList) {
 

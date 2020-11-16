@@ -1,7 +1,7 @@
 package com.pm.arithmetics.utils;
 
 import com.pm.arithmetics.exceptions.TooShortOperandException;
-import com.pm.arithmetics.exceptions.InvalidZeroOperandForDivisionException;
+import com.pm.arithmetics.exceptions.InvalidOperandException;
 
 import java.util.Arrays;
 
@@ -14,6 +14,6 @@ public class Validator {
 
     public static void dividentValidate(double[] operandList) {
         if(Arrays.stream(operandList).filter(a->a==0).findAny().isPresent())
-            throw new InvalidZeroOperandForDivisionException();
+            throw new InvalidOperandException();
     }
 }

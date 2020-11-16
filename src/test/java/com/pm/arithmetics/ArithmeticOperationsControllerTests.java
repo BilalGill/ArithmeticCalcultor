@@ -69,7 +69,7 @@ public class ArithmeticOperationsControllerTests {
                 .content("[1, 0]"))
                 .andDo(print())
                 .andExpect(status().isUnprocessableEntity())
-                .andExpect(status().reason("Invalid zero operand for division"));
+                .andExpect(status().reason("Invalid operand exception"));
     }
 
     @Test
